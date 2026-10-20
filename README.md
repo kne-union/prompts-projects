@@ -46,6 +46,24 @@
 
 ---
 
+### 3. 前端组件使用规范
+
+**功能**: 规定列表、表单、弹窗、详情优先使用 BizUnit 体系组件，尽量不用 antd 同类组件
+
+**适用场景**: 
+- 写列表页、表单、弹窗、详情页
+- 判断该用 `components-core` 组件还是 antd
+
+**核心内容**:
+- 选型顺序：`components-admin:BizUnit` → `components-core` 组件 → antd（须注释原因）
+- `TablePage` / `TablePage@Table`、`FormInfo` / `FormInfo@useFormModal`、`Modal@useModal` / `Modal@useConfirmModal`、`InfoPage` 与 antd 的对照
+- `components-core:Table` 已废弃，新代码不要使用
+- 列表、表单弹窗、普通弹窗、详情示例
+
+**使用方式**: 阅读 [原文档](./prompts/前端组件使用规范.md) 了解详情
+
+---
+
 ## 如何选择
 
 | 需求 | 使用文档 |
@@ -54,3 +72,4 @@
 | 创建新的业务模块（列表、表单、详情） | 创建业务模块 |
 | 添加中英文语言包 | 业务组件国际化 |
 | 快速生成 CRUD 功能模块 | 创建业务模块 |
+| 写列表、表单、弹窗、详情，选组件 | 前端组件使用规范 |
